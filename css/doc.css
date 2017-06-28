@@ -1,0 +1,39 @@
+.doc{
+	background-image: url('doctor.jpg');
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0px;
+	padding-top: 90px;
+	height: 100%;
+	border-radius: 15px 15px;
+	background-repeat: no-repeat;
+}
+.doc-ba{
+	box-sizing: border-box;
+	padding: 10px;
+	background-color: #b2ecf0;
+}
+.doc-ba > li.active > a,
+.doc-ba > li.active > a:hover,
+.doc-ba > li.active > a:focus {
+  
+  background-color: #b2ecf0;
+  border: 1px solid #ddd;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a{
+	background-color: #b2ecf0;
+}
+
+.doc-sd{
+	box-sizing: border-box;
+	padding: 10px;
+	background-color: #015675;
+}
+.doc-sc{
+	box-sizing: border-box;
+	padding: 10px;
+	background-color: #8aafa3;
+}
+.form-width{
+	width: 40px;
+}
