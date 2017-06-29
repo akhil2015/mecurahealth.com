@@ -29,13 +29,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/normalize.css">
-        <!-- <link rel="stylesheet" href="css/custom.css"> -->
-        <link rel="stylesheet" href="exp.css">
-        <link rel="stylesheet" href="css/list.css">
+        <link rel="stylesheet" href="css/nav.css"> -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/doc.css">
         <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
@@ -43,7 +39,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
+        <script> 
+          $(function() { 
+          $( "#datepicker" ).datepicker(); 
+          }); 
+        </script>
 
   
 </head>
@@ -75,7 +75,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   </section>
         <!-- End of nav bar -->
   <section class="doc">
-    <div class="container">
+    <div class="container-fluid">
       <h2>Book Apointment</h2>
       <form action="<?php $_PHP_SELF ?>" method="POST">
         <div class="col-md-6">
@@ -114,38 +114,38 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             {
               if($row['mon']=='y')
               {
-                echo  '<label><input type="radio" value="Monday" name="day" required>Mon '.$row['time'].'</label><br>';
+                echo  '<label><input type="radio" value="Monday '.$row['time'].'" name="day" required>Mon '.$row['time'].'</label><br>';
               }
               if($row['tue']=='y')
               {
-                echo  '<label><input type="radio" value="Tuesday" name="day" required required>Tue '.$row['time'].'</label><br>';
+                echo  '<label><input type="radio" value="Tuesday '.$row['time'].'" name="day" required required>Tue '.$row['time'].'</label><br>';
               }
              if($row['wed']=='y')
               {
-                echo  '<label><input type="radio" value="Wednesday" name="day" required>Wed '.$row['time'].'</label><br>';
+                echo  '<label><input type="radio" value="Wednesday '.$row['time'].'" name="day" required>Wed '.$row['time'].'</label><br>';
               }
               if($row['thr']=='y')
               {
-                echo  '<label><input type="radio" value="Thursday" name="day" required>thr '.$row['time'].'</label><br>';
+                echo  '<label><input type="radio" value="Thursday '.$row['time'].'" name="day" required>thr '.$row['time'].'</label><br>';
               }
              if($row['fri']=='y')
               {
-                echo  '<label><input type="radio" value="Friday" name="day" required>Fri '.$row['time'].'</label><br>';
+                echo  '<label><input type="radio" value="Friday '.$row['time'].'" name="day" required>Fri '.$row['time'].'</label><br>';
               }
              if($row['sat']=='y')
               {
-                echo  '<label><input type="radio" value="Saturday" name="day" required>Sat '.$row['time'].'</label><br>';
+                echo  '<label><input type="radio" value="Saturday '.$row['time'].'" name="day" required>Sat '.$row['time'].'</label><br>';
               }
              if($row['sun']=='y')
               {
-                echo  '<label><input type="radio" value="Sunday" name="day" required>Sun '.$row['time'].'</label><br>';
+                echo  '<label><input type="radio" value="Sunday '.$row['time'].'" name="day" required>Sun '.$row['time'].'</label><br>';
               }   
             }
           ?>
         </div>
         <div>
           <label>Date</label>
-          <input type="date" name="date" style="color: #1f1f21">
+          <input type="text" name="date" id="datepicker">
         </div>
         <br>
         <br>
@@ -168,36 +168,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $time = mysqli_real_escape_string($conn, $_POST['day']);
     $date = mysqli_real_escape_string($conn, $_POST['date']);
   
-  $sql3 = "INSERT INTO appointment (p_name, p_age, p_mbl, p_add, p_sex, p_doc, p_date, p_day, did) VALUES ('$name', $age, $mobile, '$add', '$gen', '$doc', $date, '$time', $age)";
+  $sql3 = "INSERT INTO appointment (p_name, p_age, p_mbl, p_add, p_sex, p_doc, p_date, p_day, did, p_time) VALUES ('$name', $age, $mobile, '$add', '$gen', '$doc', $date, '$time', $myusername, now())";
   if (mysqli_query($conn, $sql3)) {
-    echo '<script type="text/javascript">',
-         'jsfunction();',
-        '</script>';
+    echo '<script language="javascript">';
+    echo 'alert("Appointment booked");';
+    echo 'window.location.href = "index.html";';
+    echo '</script>';
 
   } else {
-    echo "Error: " . $sql3 . "<br>" . mysqli_error($conn);
+    echo '<script language="javascript">';
+    echo 'alert("data inappropriate");';
+    echo 'window.location.href = "index.html";';
+    echo '</script>';
   }
   }
 ?>
     
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                </div>
-                <div class="modal-body">
-                  New record created successfully
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
+         
   <!-- Footer -->
         <footer>
             <div class="footer-all">
