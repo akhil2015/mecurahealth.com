@@ -7,6 +7,7 @@ html,body{
 	font-size: 16px;
 }
 .nav-custom a:hover{
+	transition:all 0.5s ease;
 	border-radius: 0px 0px 25px 25px;
 }
 
@@ -23,9 +24,8 @@ html,body{
 
 .srv-all,.sct-all{
 	box-sizing: border-box;
-	
 	text-align: center;
-	padding: 10px 0px;
+	padding: 0px 0px;
 	margin: 0px;
 }
 
@@ -59,8 +59,8 @@ html,body{
 	text-decoration: none;
 }
 .srv-all .box-d:hover{
-	
-	box-shadow: 10px 10px 5px #888888;
+	transition: 0.6s;
+	box-shadow: 0px 0px 7px 7px #CCC;
 }
 .srv-all img{
 	height: 150px;
