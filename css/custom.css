@@ -39,17 +39,28 @@ html,body{
     background-repeat: no-repeat;
     background-size: cover; 
 }
+.sct-all .mid-img1 h1{
+	color:white;
+	font-size: 3.5rem;
+	padding-top:200px;
+	padding-bottom: 0px;
+}
 .sct-all .mid{
 	width: 100%;
 	height: 500px;
 	right: 0px;
+	color:white;
 }
 .mid .mid-img1{
 	position: absolute;
 	right: 0px;
 
 }
-
+.srv-all{
+	width:80%;
+	margin:auto;
+	padding-bottom: 20px;
+}
 .srv-all a,.srv-all h1{
 	text-decoration: none;
 	color: #d7a334;
@@ -61,10 +72,16 @@ html,body{
 .srv-all .box-d:hover{
 	transition: 0.6s;
 	box-shadow: 0px 0px 7px 7px #CCC;
+
 }
 .srv-all img{
 	height: 150px;
 	width:150px;
+}
+.srv-all .box-d:hover img{
+	height:140px;
+	width:140px;
+	transition: 0.6s;
 }
 
 
