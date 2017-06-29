@@ -1,13 +1,17 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
-
 # TEAM
+/*Team*/
+	Ravi Anand
+	Design & Development
+	From: India
 
-    <name> -- <role> -- <twitter>
+	Akhil Bharti
+	Design & Development
+	From: India
 
 # THANKS
 
-    <name>
+    	Akabar Khan
+	Founder/CEO Mecurachild
 
 # TECHNOLOGY COLOPHON
 
