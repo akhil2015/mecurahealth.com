@@ -2,9 +2,10 @@ html,body{
 	height: 100%;
 	width: 100%;
 }
-.nav-cutom{
+.nav-custom{
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 15px;
+	opacity:1;
 }
 .nav-custom a:hover{
 	transition:all 0.5s ease;
@@ -28,10 +29,12 @@ html,body{
 	padding: 0px 0px;
 	margin: 0px;
 }
-
+.sct-all{
+	height:75%;
+}
 .sct-all .back{
 	position: relative;
-	background-image: url('back.jpg');
+	background-image: url('back5.jpg');
     height: 100%;
     width: 100%;
     background-attachment: fixed;
@@ -42,8 +45,10 @@ html,body{
 .sct-all .mid-img1 h1{
 	color:white;
 	font-size: 3.5rem;
-	padding-top:200px;
+	margin-top: 30%;
 	padding-bottom: 0px;
+    text-shadow: 2px 0 4px #82CAFA;
+    margin-bottom: 10px;
 }
 .sct-all .mid{
 	width: 100%;
@@ -55,6 +60,9 @@ html,body{
 	position: absolute;
 	right: 0px;
 
+}
+.mid .mid-img1 h3{
+	margin: 0;
 }
 .srv-all{
 	width:80%;
@@ -128,11 +136,11 @@ html,body{
 }
 .btn:hover {
   text-decoration: none;
-  color: #ff0033;
+  color: #FF7F50;
 }
 .btn-1 {
   background: transparent;
-  font-weight: 100;
+  font-weight: bold;
 }
 .btn-1 svg {
   height: 45px;
