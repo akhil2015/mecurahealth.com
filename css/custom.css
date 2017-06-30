@@ -209,3 +209,12 @@ html,body{
 	color:white;
 	font-size: 15px;
 }
+
+
+@media (max-width: 767px) {
+	.back-color a{
+		background-color: #070707;
+		opacity: 0.9;
+	}
+	
+}

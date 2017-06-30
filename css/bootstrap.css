@@ -4494,7 +4494,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 /*Edited by ravi*/
 .navbar-default {
-  background-color: #070707;
+  background-color: transparent;
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
@@ -4556,7 +4556,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #333;
-    background-color: transparent;
+    background-color: #2d2b2b;
+
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
