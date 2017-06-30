@@ -42,7 +42,7 @@ html,body{
     background-repeat: no-repeat;
     background-size: cover; 
 }
-.sct-all .mid-img1 h1{
+.sct-all .mid h1{
 	color:white;
 	font-size: 3.5rem;
 	margin-top: 30%;
@@ -55,13 +55,13 @@ html,body{
 	height: 500px;
 	right: 0px;
 	color:white;
-}
-.mid .mid-img1{
 	position: absolute;
-	right: 0px;
-
 }
-.mid .mid-img1 h3{
+.mid .banner-width{
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+}
+.mid h3{
 	margin: 0;
 }
 .srv-all{
