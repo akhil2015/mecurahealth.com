@@ -1,29 +1,72 @@
-.navbar-default {
+html,body{
+  height: 100%;
+  width: 100%;
+}
+.nav-cutom{
+  font-weight: bold;
+  font-size: 16px;
+}
+.nav-custom a:hover{
+  border-radius: 0px 0px 25px 25px;
+}
+
+.company-name h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+.company-name h3 span{
+  color:  #5383d3;
+}
+.sct-all{
+  box-sizing: border-box;
+  
+  text-align: center;
+  padding: 0px 0px;
+  margin: 0px;
+}
+
+.footer-all{
+  box-sizing: border-box;
+  background-color: #113b60;
+  color: white;
+  padding: 20px 50px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+
+}
+.footer-all a{
+  color: #ffffff;
+  padding: 0 5px 0 5px;
+  height: 15px;
+  width: 30px;
   background-color: transparent;
-  border-color: transparent;
+  transition:all 0.3s ease;
 }
-.navbar-default .navbar-brand {
+.footer-all a:hover{
+  background-color: #0b66b7;
   color: #ffffff;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  height: 25px;
+  width: 40px;
+  text-decoration: none;
+  transition:all 0.3s ease;
+  border-radius: 10%;
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-  color: #ffffff;
-  background-color: #333399;
+.footer-p{
+  font-weight: normal;
+  font-size: 14px;
 }
-.navbar-default .navbar-text {
-  color: #ffffff;
-}
-.navbar-default .navbar-nav > li > a {
-  color: #ffffff;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #ffffff;
-  background-color: #333399;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
+.footer-copyright{
+  box-sizing: border-box;
+  background-color: #041533;
+  padding: 5px 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #c0c4c6;
 }
