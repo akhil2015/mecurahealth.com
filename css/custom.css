@@ -18,7 +18,7 @@ html,body{
 	float:right;
 }
 .nav-custom{
-	margin-top: 10px;
+	margin-top: 25px;
 	font-weight: bold;
 	font-size: 15px;
 	opacity:1;
@@ -50,7 +50,7 @@ html,body{
 }
 .sct-all .back{
 	position: relative;
-	background-image: url('back.jpg');
+	background-image: url('back2.jpg');
     height: 100%;
     width: 100%;
     background-attachment: fixed;
@@ -58,15 +58,21 @@ html,body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.filter{
+	
+}
 .sct-all .mid{
 	width: 100%;
 	height: 500px;
 	right: 0px;
 	color:white;
 	position: absolute;
+	
+}
+.mid{
+	margin-top: 20%;
 }
 .mid .banner-width{
-	margin-top: 20%;
 	margin-bottom: 30px;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -74,20 +80,17 @@ html,body{
 	padding-left: 20px;
 	padding-right: 20px;
 	box-sizing: border-box;
-	border-radius: 25px;
-	
-	
+	border-radius: 25px;background:rgba(24, 28, 32, 0.7);;
 }
 .sct-all .mid h1{
-	color:white;
 	font-size: 3.5rem;
 	padding-bottom: 0px;
-    text-shadow: 2px 0 4px #82CAFA;
+    text-shadow: 5px 0 10px black;
     margin-bottom: 10px;
-    opacity: 1;
 }
 .mid h3{
 	margin-bottom: 10px;
+	text-shadow: 5px 0 10px black;
 }
 .srv-all{
 	width:80%;
@@ -170,6 +173,7 @@ html,body{
 .btn-1 {
   background: transparent;
   font-weight: bold;
+  text-shadow: 5px 0 10px black;
 }
 .btn-1 svg {
   height: 45px;

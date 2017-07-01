@@ -184,6 +184,12 @@ textarea {
 .clearfix:after {
     clear: both;
 }
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
