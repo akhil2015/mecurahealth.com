@@ -40,15 +40,7 @@ html,body{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
-}
-.sct-all .mid h1{
-	color:white;
-	font-size: 3.5rem;
-	margin-top: 30%;
-	padding-bottom: 0px;
-    text-shadow: 2px 0 4px #82CAFA;
-    margin-bottom: 10px;
+    background-size: cover;
 }
 .sct-all .mid{
 	width: 100%;
@@ -58,11 +50,28 @@ html,body{
 	position: absolute;
 }
 .mid .banner-width{
-	margin-bottom: 20px;
+	margin-top: 10%;
+	margin-bottom: 30px;
 	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-sizing: border-box;
+	border-radius: 25px;
+	background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    opacity: 0.9;
+	
+}
+.sct-all .mid h1{
+	color:white;
+	font-size: 3.5rem;
+	padding-bottom: 0px;
+    text-shadow: 2px 0 4px #82CAFA;
+    margin-bottom: 10px;
+    opacity: 1;
 }
 .mid h3{
-	margin: 0;
+	margin-bottom: 10px;
 }
 .srv-all{
 	width:80%;
@@ -216,4 +225,55 @@ html,body{
 		background-color: #070707;
 		opacity: 0.9;
 	}
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }

@@ -22,6 +22,19 @@
         <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
         <script src="js/bootstrap.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script>
+            function booknow() {
+                document.getElementById("book").style.height = "100%";
+            }
+
+            function ondemand() {
+                document.getElementById("demand").style.height = "100%";
+            }
+            function closenow() {
+                document.getElementById("book").style.height = "0%";
+                document.getElementById("demand").style.height = "0%";
+            }
+        </script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -59,13 +72,96 @@
 
                 <div class="mid">
                     <div class="container banner-width animated fadeInDownBig">
-                        <h1 id="startchange">Mecura e-Clinic</h1>
+                        <h1 id="startchange"><span style="opacity: 1;">Mecura e-Clinic</h1>
                         <h3>Mecura is the latest technology in child healthcare in India which makes it simpler, easier and better.</h3>  
-                        <a href="#" class="btn btn-1">
-                            <svg>
-                                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
-                            </svg>BOOK NOW
-                        </a>
+                        <div class="row">
+                            <div class="col-md-2 col-sm-2">
+                                <a href="#" class="btn btn-1">
+                                    <svg>
+                                        <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                    </svg>PHYSIOTHERAPY
+                                </a>
+                            </div>
+                            <div id="demand" class="overlay">
+                              <a href="javascript:void(0)" class="closebtn" onclick="closenow()">&times;</a>
+                              <div class="overlay-content">
+                                <form action="list.php" method="POST">
+                                    <div class="form-group" style="text-align: center;">
+                                        <input type="text" class="form-control" placeholder="Full Name" name="name" style="width: 50%; margin: auto; margin-bottom: 2px; ">
+                                        <input type="text" class="form-control" placeholder="Phone number" name="mbl" style="width: 50%; margin: auto; margin-bottom: 2px; ">
+                                        <input type="text" class="form-control" placeholder="Locality" name="Locality" style="width: 50%; margin: auto; margin-bottom: 2px; ">
+                                        <input type="text" list="special" class="form-control" placeholder="Specialization" name="Specialist" style="width: 50%; margin: auto; margin-bottom: 2px; ">
+                                        <datalist id="special">
+                                            <option value="Child Specialist">
+                                            <option value="Orthopaedic">
+                                            <option value="Gyaenocologistn">
+                                            <option value="MS in Ear">
+                                            <option value="Laproscopic & Cancer Surgeon">
+                                            <option value="OBS & Gyane & Infertility Specialist">
+                                            <option value="General Physician">
+                                            <option value="Oral & Dental Implantalogist">
+                                            <option value="Physician & Cardio-Diabetologist">
+                                            <option value="Dental Surgeon">
+                                            <option value="Oral & Dental surgeon">
+                                        </datalist>
+                                    </div>
+                                    <button type="submit" class="btn btn-info">Submit</button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-sm-2">
+                                <a href="#" class="btn btn-1" onclick="ondemand()">
+                                    <svg>
+                                        <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                    </svg>ON DEMAND
+                                </a>
+                            </div>
+                            <div id="book" class="overlay">
+                              <a href="javascript:void(0)" class="closebtn" onclick="closenow()">&times;</a>
+                              <div class="overlay-content">
+                                <form action="list.php" method="POST">
+                                    <div class="form-group" style="text-align: center;">
+                                        <input type="text" list="special" class="form-control" placeholder="Specialization" name="Specialist" style="width: 50%; margin: auto; ">
+                                        <datalist id="special">
+                                            <option value="Child Specialist">
+                                            <option value="Orthopaedic">
+                                            <option value="Gyaenocologistn">
+                                            <option value="MS in Ear">
+                                            <option value="Laproscopic & Cancer Surgeon">
+                                            <option value="OBS & Gyane & Infertility Specialist">
+                                            <option value="General Physician">
+                                            <option value="Oral & Dental Implantalogist">
+                                            <option value="Physician & Cardio-Diabetologist">
+                                            <option value="Dental Surgeon">
+                                            <option value="Oral & Dental surgeon">
+                                        </datalist>
+                                    </div>
+                                    <button type="submit" class="btn btn-info">Submit</button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <a href="#" class="btn btn-1" onclick="booknow()">
+                                    <svg>
+                                        <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                    </svg>BOOK NOW
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-2">
+                                <a href="#" class="btn btn-1">
+                                    <svg>
+                                        <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                    </svg>LAB TEST
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-2">
+                                <a href="#" class="btn btn-1">
+                                    <svg>
+                                        <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                    </svg>STORIES
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
         </section>
