@@ -2,7 +2,23 @@ html,body{
 	height: 100%;
 	width: 100%;
 }
+.top-feed{
+	background:#FF7F50;
+	color:white;
+	font-weight: bold;
+	overflow:auto;
+	padding:2px 10px;
+}
+.notice{
+	display:inline-block;
+	float:left;
+}
+.short-contact{
+	display: inline-block;
+	float:right;
+}
 .nav-custom{
+	margin-top: 10px;
 	font-weight: bold;
 	font-size: 15px;
 	opacity:1;
@@ -78,6 +94,10 @@ html,body{
 	margin:auto;
 	padding-bottom: 20px;
 }
+.srv-all h1{
+	padding-top:40px;
+	text-decoration: underline;
+}
 .srv-all a,.srv-all h1{
 	text-decoration: none;
 	color: #d7a334;
@@ -88,7 +108,7 @@ html,body{
 }
 .srv-all .box-d:hover{
 	transition: 0.6s;
-	box-shadow: 0px 0px 7px 7px #CCC;
+	box-shadow: 0px 7px 7px 0px #CCC;
 
 }
 .srv-all img{
