@@ -40,9 +40,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-  
 </head>
 <body>
   <!-- nav bar -->
