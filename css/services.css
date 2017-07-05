@@ -17,13 +17,22 @@
 	font-size: 16px;
 	font-weight: bold;
 }
+.box-heading{
+	text-align: center;
+	border-top: thick solid #6eb530;
+	border-bottom: thick solid #6eb530;
+	margin: 5px; 
+}
+.box-heading:hover{
+	background-color: #ffffff;
+}
 .box{
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 5px;
 }
 .box:hover{
-	
+	background-color: #ffffff;	
 	border-bottom: thick solid #6eb530;
 
 }

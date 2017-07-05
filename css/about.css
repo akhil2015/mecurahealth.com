@@ -1,0 +1,31 @@
+.abt{
+	background-image: url('waves.png');
+	padding-top: 90px;
+	padding-bottom: 100px;
+}
+.box{
+	background-color: #ffffff;
+	margin: 50px;
+	box-sizing: border-box;
+	padding: 20px;
+
+
+}
+
+.box-heading{
+	text-align: center;
+	margin-top: 20px;
+	border-top: thick solid #6eb530;
+	border-bottom: thick solid #6eb530;
+	margin: 5px; 
+	color: #42bff4;
+	font-weight: bold;
+}
+.box p{
+	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
