@@ -1,0 +1,136 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mecura Health</title>
+        <link rel="icon" href="img/favicon.png" type="image/x-icon">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/services.css">
+        <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+        <script src="js/bootstrap.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <!-- nav bar -->
+    <section class="sct-all container-fluid">
+    <div class="navbar navbar-default nav-custom navbar-fixed-top animated fadeInDownBig">
+      <div class="container-fluid" style="background-color: #333;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Main-nav">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand company-name" href="#" ><h3>Mecura <span>Health</span></h3></a>
+        </div>
+                    <div class="collapse navbar-collapse" id="Main-nav">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#" style="color: #fff;">Home</a></li>
+                            <li><a href="#" style="color: #fff;">Services</a></li>
+                            <li><a href="#" style="color: #fff;">Doctors</a></li>
+                            <li><a href="#" style="color: #fff;">Careers</a></li>
+                            <li><a href="#" style="color: #fff;">About</a></li>
+                            <li><a href="#" style="color: #fff;">Mecura Child</a></li>
+                        </ul>
+                    </div>
+               </div>
+           </div>
+        </section>
+        <section class="servi">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="box">
+                        <h1>Clinic</h1>
+                        <p>An establishment or hospital department where outpatients are given medical treatment or advice, especially of a specialist nature.</p>
+                    </div>
+                    <div class="box">
+                        <h1>On-Demand Doctor</h1>
+                        <p>Available when you are and without the hassle of the waiting room. Connect in minutes with board-certified doctors and therapists over live video.</p>
+                    </div>
+                    <div class="box">
+                        <h1>Home Consultant</h1>
+                        <p>A consultant is a professional who provides expert advice in a particular area</p>
+                    </div>
+                    <div class="box">
+                        <h1>Physiotherapy</h1>
+                        <p>Physical therapy, mostly known as Physiotherapy, is a primary care specialty in western medicine that, by using mechanical force and movements.</p>
+                    </div>
+                    <div class="box">
+                        <h1>Laboratory Service</h1>
+                        <p>A clinical laboratory is a laboratory where tests are usually done on clinical specimens in order to obtain information about the health of a patient as pertaining to the diagnosis, treatment, and prevention of disease.</p>
+                    </div>
+                    <div class="box">
+                        <h1>Pharmacy Service</h1>
+                        <p>Pharmacy is the science and technique of preparing and dispensing drugs. It is a health profession that links health sciences with chemical sciences and aims to ensure the safe and effective use of pharmaceutical drugs.</p>
+                    </div>
+                    <div class="box">
+                        <h1>Ambulance Service</h1>
+                        <p>An ambulance is a vehicle for transportation of ill or injured people. Our ambulance works 24 hours a day and 7 days a week even at mid night. Just call on emergency number.</p>
+                    </div>
+                    <div class="box">
+                        <h1>Nursing</h1>
+                        <p>Nursing is the protection, promotion, and optimization of health and abilities, prevention of illness and injury, facilitation of healing, alleviation of suffering through the diagnosis and treatment of human response, and advocacy in the care of individuals, families, groups, communities, and populations.</p>
+                    </div>
+                    <div class="box">
+                        <h1>Emergengy Services</h1>
+                        <p>The public organizations that respond to and deal with emergencies when they occur, especially the ambulance service, the police, and the fire brigade. Call us on emergency number.</p>
+                    </div> 
+                </div>
+                <div class="col-md-5">
+                    <form action="<?php $_PHP_SELF ?>" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Full name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="text" class="form-control" maxlength="2" placeholder="00" name="age" required>
+                              </div>
+                              <div class="form-group">
+                                <label for="mbl">Mobile</label>
+                                <input type="text" class="form-control bfh-phone" maxlength="10" placeholder="9996663333" name="mbl" required>
+                              </div>
+                              <div class="form-group">
+                                <label for="add">Address</label>
+                                <input type="text" class="form-control" placeholder="Address" name="add"  required>
+                              </div>
+                              <div class="form-group">
+                                <label for="service">Required Service</label>
+                                <input type="text" class="form-control" placeholder="Required Service" list="service" name="service" required>
+                                <datalist id="service">
+                                    <option value="Home Consultant">
+                                    <option value="Physiotherapy">
+                                    <option value="On-Demand Doctor">
+                                    <option value="Nursing">
+                                    <option value="Laboratory Service">
+                                    <option value="Pharmacy Service">
+                                    <option value="24x7 Ambulance Service">
+                                </datalist>
+                            </div>
+                            <div class="form-group">
+                                <label for="add">Gender</label><br>
+                                <label class="radio-inline"><input type="radio" name="gender" value="male" required>Male</label>
+                                <label class="radio-inline"><input type="radio" name="gender" value="female" required>Female</label>
+                                <label class="radio-inline"><input type="radio" name="gender" value="other" required>other</label>
+                              </div>  
+                            <br>
+                            <button type="submit" name="update" id="update" class="btn btn-success">Submit</button>
+                            <button type="Reset" class="btn btn-default">Reset</button>
+                            
+                          </form>
+                </div>
+            </div>            
+        </section>

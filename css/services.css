@@ -1,0 +1,32 @@
+.servi{
+	background-image: url('waves.png');
+	box-sizing: border-box;
+	text-align: justify;
+	margin: 0px;
+	padding-top: 90px;
+	padding-left: 50px;
+	border-radius: 15px 15px;
+	background-repeat: repeat;
+}
+.servi h1{
+	color: #42bff4;
+	font-weight: bold;
+}
+.servi p{
+	padding-left: 15px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.box{
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+.box:hover{
+	
+	border-bottom: thick solid #6eb530;
+
+}
+.box:hover{
+	box-shadow: 10px 10px 3px 0px rgba(0,0,0,0.75);
+}

@@ -246,8 +246,6 @@ html,body{
 	color:white;
 	font-size: 15px;
 }
-
-
 @media (max-width: 767px) {
 	.back-color a{
 		background-color: #070707;
@@ -266,7 +264,6 @@ html,body{
     overflow-y: hidden;
     transition: 0.7s;
 }
-
 .overlay-content {
     position: relative;
     top: 20%;
