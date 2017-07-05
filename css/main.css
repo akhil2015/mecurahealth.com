@@ -184,12 +184,6 @@ textarea {
 .clearfix:after {
     clear: both;
 }
-.left{
-    float:left;
-}
-.right{
-    float:right;
-}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -208,11 +202,7 @@ textarea {
     /* Style adjustments for high resolution devices */
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+
 
 @media print {
     *,
@@ -221,8 +211,7 @@ textarea {
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+        color: #000 !important; 
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -256,10 +245,6 @@ textarea {
         page-break-inside: avoid;
     }
 
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
 
     thead {
         display: table-header-group;
