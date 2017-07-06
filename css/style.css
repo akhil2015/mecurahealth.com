@@ -31,7 +31,7 @@ html, body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .background:first-child {
-  background-image: url(https://s8.postimg.org/lf2udl5np/4_Aihmii.jpg);
+  background-image: url(../img/1.jpg);
   -webkit-transform: translateY(-15vh);
           transform: translateY(-15vh);
 }
@@ -40,10 +40,10 @@ html, body {
           transform: translateY(15vh);
 }
 .background:nth-child(2) {
-  background-image: url(https://s8.postimg.org/ow4wgk4px/ugqti_Lg.jpg);
+  background-image: url(../img/2.gif);
 }
 .background:nth-child(3) {
-  background-image: url(https://s8.postimg.org/grwsbtiat/x_ZMOBTj.jpg);
+  background-image: url(../img/3.jpg);
 }
 
 /* Set stacking context of slides */
@@ -118,4 +118,43 @@ html, body {
 .background.down-scroll + .background:not(.down-scroll) .content-wrapper {
   -webkit-transform: translateY(15vh);
           transform: translateY(15vh);
+}
+.button2 {
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  border: none;
+  color: #333;
+  text-align: center;
+  font-size: 24px;
+  padding: 15px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  height:60px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
 }
