@@ -1,0 +1,69 @@
+.back{
+	background-image: url('physio.jpg');
+	margin-top: 40px;
+	padding-top: 40px;
+	padding-bottom: 50px;
+	width: 100%;
+	height: 85%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 10px solid gray;
+}
+.border1{
+	background-image: url('border.jpg')
+	background-repeat: repeat-x;
+	
+}
+.contain{
+	margin-top: 0px;
+	padding-top: 40px;
+	padding-bottom: 0px;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 10px solid gray;
+}
+.back1{
+	background-image: url('physio2.jpg');
+}
+.back2{
+	background-image: url('physio3.jpg');
+}
+.back3{
+	background-image: url('physio4.jpg');
+}
+.box{
+	margin: auto;
+	height: 400px;
+	width: 300px;
+	border: 6px double green;
+	box-sizing: border-box;
+	text-align: justify;
+	padding: 12px;
+}
+.box h1,.box1 h1{
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Zilla Slab', serif;
+	font-size: 34px;
+}
+.box p,.box1 p{
+	font-weight: bold;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+.box1{
+	margin: 26px;
+	border: 6px double green;
+	box-sizing: border-box;
+	text-align: justify;
+	padding: 12px;
+}
+img{
+	margin: auto;
+	height: 300px;
+	width: 300px;
+}

@@ -1,13 +1,11 @@
 <?php
 if(isset($_POST['submit'])) {
-  $msg = 'Name: ' .$_POST['name'] ."\n"
-	'Email: ' .$_POST['email'] ."\n"
-	'Phone number ' ."\n" .$_POST['contact'];
+  $msg = 'Name: ' .$_POST['name']. 'Email: ' .$_POST['email']. 'Phone number ' .$_POST['contact'];
 
-mail('akhilcool1996@gmail.com', 
+mail('ravianand.anand72@gmail.com', 
 	'Appointment', $msg);
 
-header('location: book-us-thank-you.html');
+header('location: book-us-thank-you.php');
 } else {
   header('Location: book-us.php');
   exit(0);
