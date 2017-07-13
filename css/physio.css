@@ -1,0 +1,21 @@
+.banner-bg{
+	background:url(../img/physio.jpg);
+	background-position: center;
+	background-attachment: fixed;
+}
+.banner-content{
+	text-align: center;
+	padding-top:20%;
+}
+.banner-content h1{
+	font-size: 5rem;
+	color:white;
+	text-shadow: 0px 0px 7px #333;
+	font-weight: 900;
+	padding: 0;
+	margin:0;
+}
+.well{
+	width:600px;
+	margin:auto;
+}
