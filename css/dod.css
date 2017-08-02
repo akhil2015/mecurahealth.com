@@ -1,0 +1,6 @@
+.banner-bg{
+	background:url(../img/Dod.jpg) no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
